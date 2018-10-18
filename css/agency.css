@@ -113,9 +113,9 @@ img::-moz-selection {
   background: transparent;
 }
 
-#mainNav {
+/* #mainNav {
   background-color: #212529;
-}
+} */
 
 #mainNav .navbar-toggler {
   font-size: 12px;
@@ -170,7 +170,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color:purple;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -213,6 +213,11 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:purple;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -311,7 +316,11 @@ header.masthead .intro-text .intro-heading {
     margin: 0 0 30px;
   }
 }
-
+#mainNav.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color:purple;
+}
 .portfolio-modal {
   padding-right: 0px !important;
 }
@@ -508,6 +517,11 @@ header.masthead .intro-text .intro-heading {
   .timeline:before {
     left: 50%;
   }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:purple;
+  }
   .timeline > li {
     min-height: 100px;
     margin-bottom: 100px;
@@ -540,6 +554,11 @@ header.masthead .intro-text .intro-heading {
   .timeline > li {
     min-height: 150px;
   }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:purple;
+  }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
@@ -561,6 +580,11 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:purple;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
@@ -600,7 +624,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color:lightgreen;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -961,3 +985,8 @@ text-align: center;
   background-color:green;
 
 }
+/* thank you */
+.mainThanks{
+  color: purple;
+}
+
