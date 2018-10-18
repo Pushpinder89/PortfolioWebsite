@@ -828,10 +828,136 @@ text-align: center;
 text-align: center;
 }
 
+/* .... project/modal seven */
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal7{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal5{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+/* .... project/modal eight */
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal8{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal5{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+
+/* .... project/modal nine */
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal9{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+
+.clickText{
+  padding-top: 15px;
+  font-size:18px;
+  font-weight: bold;
+}
+#portfolioModal5{
+  width: 53%;
+  height: 90%;
+ margin-left: 28%;
+ text-align: center;
+  box-align: center;
+}
+.img-fluid{
+  width: 290px;
+  height: 217px;
+  position: center;
+}
+.text-uppercase{
+text-align: center;
+}
+
+/* nav bar */
 #mainNav{
   background-color:green;
 
-}
-.navbar-shrink{
- 
 }
