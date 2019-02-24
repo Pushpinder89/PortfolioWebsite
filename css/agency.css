@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 p {
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family:  BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 h1{
   font-size: 80px;
@@ -45,11 +45,19 @@ section {
 }
 
 section h2.section-heading {
-  font-size: 40px;
+  font-size:45px;
   margin-top: 0;
   margin-bottom: 15px;
-}
+  color: black;
+  /* font fm go */
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
+}
+/* my changes.............................. */
+#bigTitle{
+  font-size: 6vw;
+}
+/* end here..................... */
 section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
@@ -58,11 +66,16 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
+/* my changes................. */
+#welcome{
+  font-size: 40px;
+}
+/* end here................... */
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
   }
+
 }
 
 .btn {
@@ -78,6 +91,7 @@ section h3.section-subheading {
 .btn-primary {
   background-color: #fed136;
   border-color: #fed136;
+  margin-top: 5%;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -149,11 +163,26 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
+/* .author-image{
+ } */
+ /* my code............ */
+ .image-author img{
+  width: 280px; height: 300px; 
+  border-radius: 50%; 
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); 
+  overflow: inherit; 
+  border: 5px solid white; 
+  z-index: 2; 
+  position:relative;
+  opacity: 1.0;
+  display: inline-block;
+ }
+/* ends here ......... */
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
@@ -178,43 +207,41 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/about/abstract_art.jpg");
-  background-repeat: no-repeat;
+/* header.masthead {
+  color: black;
+ 
+  background-image: url("../img/portfolio/floor-texture.jpg");
+  background-repeat: no-repeat;   
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-}
-
-header.masthead .intro-text {
+} */
+/* header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
-}
-
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
+}*/
+.intro-lead-in {
+  line-height: 15px;
+  margin-bottom: 15px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
+/*
 header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 400;
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+} */
 
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
-  #mainNav.navbar-shrink {
+  /* header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 90px;
+    text-align: center;
+  }  */
+
+   /* #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color:purple;
@@ -232,17 +259,31 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
+  } */
 }
 
-.service-heading {
+/* .service-heading {
   margin: 15px 0;
   text-transform: none;
-}
+} */
 
+
+/* my code.....this style is for portfolio page */
+.img-fluid{
+  width: 100%;
+  height: 217px;
+  position: center;
+}
+/* this style ends here */
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+  box-shadow: 15px 15px 5px black;
+  background-color: antiquewhite;
+  border: 2px solid black;
+}
+.divMain1{
+ width: 87% !important;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -251,6 +292,8 @@ header.masthead .intro-text .intro-heading {
   max-width: 290px;
   margin: 0 auto;
   cursor: pointer;
+  margin-top: 10px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -280,6 +323,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
+  
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
@@ -290,14 +334,15 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 290px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 8px;
   text-align: center;
-  background-color: #fff;
+  background-color: antiquewhite;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
+  font-size: 20px;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -314,6 +359,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+    margin-left: 6% !important;
   }
 }
 #mainNav.navbar-shrink {
@@ -422,6 +468,7 @@ header.masthead .intro-text .intro-heading {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
+
 }
 
 .timeline > li:after, .timeline > li:before {
@@ -465,8 +512,9 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
   color: white;
   border: 7px solid #e9ecef;
-  border-radius: 100%;
+  border-radius: 100%; 
   background-color: #fed136;
+ 
 }
 
 .timeline > li .timeline-image h4 {
@@ -480,6 +528,11 @@ header.masthead .intro-text .intro-heading {
   padding: 0 20px 0 100px;
   text-align: left;
 }
+/* my code added here ......... */
+.timeline > li.timeline-inverted > .timeline-panel > .timeline-heading {
+margin-left: -2%;
+}
+/* ends here ......... */
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
   right: auto;
@@ -504,13 +557,15 @@ header.masthead .intro-text .intro-heading {
   color: inherit;
 }
 
-.timeline .timeline-heading h4.subheading {
+.subheadingJob {
   text-transform: none;
+  text-align: center;
 }
 
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -538,6 +593,7 @@ header.masthead .intro-text .intro-heading {
     height: 100px;
     margin-left: -50px;
   }
+
   .timeline > li .timeline-image h4 {
     font-size: 13px;
     line-height: 18px;
@@ -563,8 +619,8 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4 {
@@ -590,9 +646,9 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
@@ -602,28 +658,7 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid #fff;
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
-}
-
-section#contact {
+/* section#contact {
   background-color:lightgreen;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
@@ -679,11 +714,12 @@ section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+} */
 
 footer {
-  padding: 25px 0;
+  padding: 15px;
   text-align: center;
+ position: relative;
 }
 
 footer span.copyright {
@@ -721,272 +757,178 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+  
 }
-/* my work starts here.... project/modal one */
+/* my work starts here.... project/modal one to fifteen */
 .clickText{
   padding-top: 15px;
   font-size:18px;
   font-weight: bold;
 }
-#portfolioModal1{
+#portfolioModal1, #portfolioModal2, #portfolioModal3, #portfolioModal4, #portfolioModal5, #portfolioModal6,
+#portfolioModal7, #portfolioModal8, #portfolioModal9, #portfolioModal10, #portfolioModal11, #portfolioModal12,
+#portfolioModal13, #portfolioModal14, #portfolioModal15,#portfolioModalMain1,#portfolioModalMain2 {
   width: 53%;
   height: 90%;
  margin-left: 28%;
  text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
+ box-align: center;
 }
 
-/* .... project/modal two */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal2{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-/* .... project/modal three */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal3{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
 
-/* .... project/modal four */
+/* this style ends here */
+/* this style is for the main page myself section */
+.img-fluidMainPage{
+  width: 130px;
+  height: 170px;
+  position: center;
+  margin-left: 44%;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  text-align: center;
+  color: white;
+  border-radius: 100%; 
+  background-color: #fed136;
+}
+.passedLeft, .passedRight {
+  height:200px; 
+  width: 230px;
+  position: center;
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+}
+#jobNow{
+  margin-top: 5%;
+}
+@media (min-width: 167px) {
+  .passedLeft, .passedRight {
+    height:90px; 
+    width: 70px;
+    margin-left:0%;
+  }
+  #jobNow{
+    margin-top: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .passedLeft, .passedRight {
+    height:180px; 
+    width: 110px;
+    margin-left:39%;
+  }
+  #jobNow{
+    margin-top: 20%;
+  }
+}
+  @media (min-width: 992px) {
+    .passedLeft, .passedRight {
+      height:180px; 
+      width: 110px;
+      margin-left:42%;
+    }
+    #jobNow{
+      margin-top: 10%;
+    }
+} 
+@media (min-width: 1200px) {
+  .passedLeft, .passedRight {
+    height:200px; 
+    width: 130px;
+    margin-left:44%;
+  }
+  #jobNow{
+    margin-top: 10%;
+  }
+} 
+.text-uppercase{
+text-align: center;
+}
 .clickText{
   padding-top: 15px;
   font-size:18px;
   font-weight: bold;
-}
-#portfolioModal4{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-/* .... project/modal six */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal6{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal5{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-/* .... project/modal seven */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal7{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal5{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-/* .... project/modal eight */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal8{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal5{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-/* .... project/modal nine */
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal9{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
-}
-
-.clickText{
-  padding-top: 15px;
-  font-size:18px;
-  font-weight: bold;
-}
-#portfolioModal5{
-  width: 53%;
-  height: 90%;
- margin-left: 28%;
- text-align: center;
-  box-align: center;
-}
-.img-fluid{
-  width: 290px;
-  height: 217px;
-  position: center;
-}
-.text-uppercase{
-text-align: center;
 }
 
 /* nav bar */
 #mainNav{
-  background-color:green;
+  background-color:black;
 
 }
 /* thank you */
 .mainThanks{
   color: purple;
 }
+#intro{
+  color:white;
+  background-color: purple;
+  font-style: normal;
+  width: 70%;
+  margin-left: 15%;
+  opacity: 0.6;
+  padding: 5px;
+}
+.techImg{
+  height: 8%;
+  width: 8%;
+  margin: 2%;
+  background-color: orange;
+}
+#tcehImgshow{
+margin-top: 10%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: whitesmoke;
+background-color: black;
+}
+#tcehImgshowbtm{
+  margin-top: 10%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: purple;
+background-color: #fed136;
+}
+#portfolio{
+  background-image: url("../img/portfolio/floor-texture.jpg");
+  background-size: 100%;
+}
+#mainContain{
+  background-color:	#fafafa;
+}
+#services, #about, #myself{
+  width:68%;
+  margin-left:17%;
+  margin-top: 2%;
+  box-shadow: 20px 20px 15px black;
+}
+#mainSection{
+  background-image: url("../img/portfolio/floor-texture.jpg");
+  overflow-y: auto;
+}
 
+@media (min-width: 167px) {
+  #services, #about, #myself{
+    width:80%;
+    margin-left:12%;
+  }
+  #intro{
+    font-size: 17px;
+    padding: 5px;
+  }
+}
+@media (min-width: 768px) {
+  #services, #about, #myself{
+  width:68%;
+  margin-left:17%;
+  }
+
+}
+.onlyThisLeft{
+  margin-left: 10%;
+}
+.onlyThisLeft > li, .onlyThisLeft2 > li{
+  text-align:left;
+  margin-left: -15%;
+}
+#contact{
+  margin-top: 5%;
+}
